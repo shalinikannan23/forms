@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+</head>
+<body>
+    <h2>Student Registration Form</h2>
+    <form action="/submit_registration" method="post">
+        <!-- Personal Information -->
+        <label for="first-name">First Name:</label><br>
+        <input type="text" id="first-name" name="first_name" required><br><br>
+
+        <label for="last-name">Last Name:</label><br>
+        <input type="text" id="last-name" name="last_name" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone" required><br><br>
+
+        <!-- Address Information -->
+        <label for="address">Address:</label><br>
+        <textarea id="address" name="address" rows="4" cols="50" required></textarea><br><br>
+
+        <!-- Gender Selection -->
+        <label for="gender">Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="female" required>
+        <label for="female">Female</label><br><br>
+
+        <!-- Course Selection -->
+        <label for="course">Course:</label><br>
+        <select id="course" name="course" required>
+            <option value="computer-science">Computer Science</option>
+            <option value="engineering">Engineering</option>
+            <option value="business">Business</option>
+            <option value="arts">Arts</option>
+            <option value="other">Other</option>
+        </select><br><br>
+
+        <!-- Date of Birth -->
+        <label for="dob">Date of Birth:</label><br>
+        <input type="date" id="dob" name="dob" required><br><br>
+
+        <!-- Submit Button -->
+        <input type="submit" value="Register">
+    </form>
+</body>
+</html>

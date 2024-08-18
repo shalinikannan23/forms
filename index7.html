@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scholarship Application Form</title>
+</head>
+<body>
+    <h2>Scholarship Application Form</h2>
+    <form action="/submit_scholarship" method="post">
+        <label for="student-name">Student Name:</label><br><br>
+        <input type="text" id="student-name" name="student_name" required><br><br>
+
+        <label for="student-id">Student ID:</label><br><br>
+        <input type="text" id="student-id" name="student_id" required><br><br>
+
+        <label for="email">Email:</label><br><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="phone">Phone Number:</label><br><br>
+        <input type="tel" id="phone" name="phone" required><br><br>
+
+        <label for="dob">Date of Birth:</label><br><br>
+        <input type="date" id="dob" name="dob" required><br><br>
+
+        <label for="address">Address:</label><br><br>
+        <textarea id="address" name="address" rows="4" cols="50" required></textarea><br><br>
+
+        <label for="course">Course of Study:</label><br><br>
+        <input type="text" id="course" name="course" required><br><br>
+
+        <label for="year">Year of Study:</label><br><br>
+        <input type="number" id="year" name="year" min="1" max="4" required><br><br>
+
+        <label for="gpa">Current GPA:</label><br><br>
+        <input type="number" id="gpa" name="gpa" step="0.01" min="0" max="4" required><br><br>
+
+        <label for="scholarship-type">Scholarship Type:</label><br><br>
+        <select id="scholarship-type" name="scholarship_type" required>
+            <option value="merit-based">Merit-based</option>
+            <option value="need-based">Need-based</option>
+            <option value="athletic">Athletic</option>
+            <option value="arts">Arts</option>
+        </select><br><br>
+
+        <label for="Reason for application">Reason For Application:</label><br><br>
+        <textarea id="essay" name="reason for application" rows="8" cols="50" placeholder="Explain why you deserve this scholarship" required></textarea><br><br>
+
+        <input type="submit" value="Submit Application">
+    </form>
+</body>
+</html>

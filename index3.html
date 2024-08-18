@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+</head>
+<body>
+    <h2>Feedback Form</h2>
+    <form action="/submit_feedback" method="post">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="last-name">Last Name:</label><br>
+        <input type="text" id="last-name" name="last_name" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="register-number">Register Number:</label><br>
+        <input type="number" id="register-number" name="register_number" min="0" required><br><br>
+
+        <label for="rating">Rating:</label><br>
+        <input type="radio" id="excellent" name="rating" value="excellent">
+        <label for="excellent">Excellent</label><br>
+        <input type="radio" id="good" name="rating" value="good">
+        <label for="good">Good</label><br>
+        <input type="radio" id="average" name="rating" value="average">
+        <label for="average">Average</label><br>
+        <input type="radio" id="poor" name="rating" value="poor">
+        <label for="poor">Poor</label><br><br>
+
+        <label for="comments">Comments:</label><br>
+        <textarea id="comments" name="comments" rows="4" cols="50" required></textarea><br><br>
+
+        <input type="submit" value="Submit Feedback">
+    </form>
+</body>
+</html>

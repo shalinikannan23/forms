@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Declaration Form</title>
+</head>
+<body>
+
+    <h2>Declaration Form</h2>
+
+    <form action="/submit" method="post">
+        <div>
+            <label for="fullName">Full Name:</label><br><br>
+            <input type="text" id="fullName" name="fullName" required>
+        </div>
+        <br>
+        <div>
+            <label for="dob">Date of Birth:</label><br><br>
+            <input type="date" id="dob" name="dob" required>
+        </div>
+        <br>
+        <div>
+            <label for="email">Email:</label><br><br>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <br>
+        <div>
+            <label for="phone">Phone Number:</label><br><br>
+            <input type="tel" id="phone" name="phone" required>
+        </div>
+        <br>
+        <div>
+            <label for="address">Address:</label><br><br>
+            <textarea id="address" name="address" rows="4" required></textarea>
+        </div>
+        <br>
+        <div>
+            <label for="declaration">Declaration:</label><br><br>
+            <textarea id="declaration" name="declaration" rows="6" required></textarea>
+        </div>
+        <br>
+        <div>
+            <input type="checkbox" id="agree" name="agree" required><br><br>
+            <label for="agree">I hereby declare that the information provided is true and correct to the best of my knowledge.</label>
+        </div>
+        <br>
+        <div>
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+
+</body>
+</html>

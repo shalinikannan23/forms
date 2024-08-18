@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Form</title>
+</head>
+<body>
+    <h2>Booking Form</h2>
+    <form action="/submit_booking" method="post">
+        <!-- Personal Information -->
+        <label for="name">Full Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone" required><br><br>
+
+        <!-- Booking Details -->
+        <label for="booking-date">Booking Date:</label><br>
+        <input type="date" id="booking-date" name="booking_date" required><br><br>
+
+        <label for="booking-time">Booking Time:</label><br>
+        <input type="time" id="booking-time" name="booking_time" required><br><br>
+
+        <label for="number-of-guests">Number of Guests:</label><br>
+        <input type="number" id="number-of-guests" name="number_of_guests" min="1" required><br><br>
+
+        <label for="special-requests">Special Requests:</label><br>
+        <textarea id="special-requests" name="special_requests" rows="4" cols="50"></textarea><br><br>
+
+        <!-- Submit Button -->
+        <input type="submit" value="Book Now">
+    </form>
+</body>
+</html>
