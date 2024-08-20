@@ -5,48 +5,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Declaration Form</title>
 </head>
-<body>
+<body style="text-align: center; font-family: Arial, sans-serif;">
 
-    <h2>Declaration Form</h2>
+    <h2 style="font-size: 20px;">Declaration Form</h2>
 
-    <form action="/submit" method="post">
+    <form action="/submit" method="post" style="display: inline-block; text-align: left; max-width: 600px; width: 100%;">
         <div>
             <label for="fullName">Full Name:</label><br><br>
-            <input type="text" id="fullName" name="fullName" required>
+            <input type="text" id="fullName" name="fullName" required style="width: 100%; padding: 8px;">
         </div>
         <br>
         <div>
             <label for="dob">Date of Birth:</label><br><br>
-            <input type="date" id="dob" name="dob" required>
+            <input type="date" id="dob" name="dob" required style="width: 100%; padding: 8px;">
         </div>
         <br>
         <div>
             <label for="email">Email:</label><br><br>
-            <input type="email" id="email" name="email" required>
+            <input type="email" id="email" name="email" required style="width: 100%; padding: 8px;">
+        </div>
+        <br>
+        <div>
+            <label for="password">Password:</label><br><br>
+            <input type="password" id="password" name="password" required style="width: 100%;">
         </div>
         <br>
         <div>
             <label for="phone">Phone Number:</label><br><br>
-            <input type="tel" id="phone" name="phone" required>
+            <input type="tel" id="phone" name="phone" required style="width: 100%; padding: 8px;">
         </div>
         <br>
         <div>
             <label for="address">Address:</label><br><br>
-            <textarea id="address" name="address" rows="4" required></textarea>
+            <textarea id="address" name="address" rows="4" required style="width: 100%; padding: 8px;"></textarea>
         </div>
         <br>
         <div>
             <label for="declaration">Declaration:</label><br><br>
-            <textarea id="declaration" name="declaration" rows="6" required></textarea>
+            <textarea id="declaration" name="declaration" rows="6" required style="width: 100%; padding: 8px;"></textarea>
         </div>
         <br>
         <div>
-            <input type="checkbox" id="agree" name="agree" required><br><br>
+            <label>Gender:</label><br><br>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="female" required>
+            <label for="female">Female</label><br>
+            <input type="radio" id="other" name="gender" value="other" required>
+            <label for="other">Other</label>
+        </div>
+        <br>
+        <div>
+            <label>Preferences:</label><br><br>
+            <input type="checkbox" id="newsletter" name="preferences" value="newsletter">
+            <label for="newsletter">Subscribe to Newsletter</label><br>
+            <input type="checkbox" id="updates" name="preferences" value="updates">
+            <label for="updates">Receive Updates</label>
+        </div>
+        <br>
+        <div>
+            <label for="file-upload">Upload Document:</label><br><br>
+            <input type="file" id="file-upload" name="file_upload" required>
+        </div>
+        <br>
+        <div>
+            <input type="checkbox" id="agree" name="agree" required>
             <label for="agree">I hereby declare that the information provided is true and correct to the best of my knowledge.</label>
         </div>
         <br>
         <div>
-            <button type="submit">Submit</button>
+            <button type="submit" style="width: 100%; padding: 10px; font-size: 16px;">Submit</button>
         </div>
     </form>
 

@@ -6,33 +6,40 @@
     <title>Booking Form</title>
 </head>
 <body>
-    <h2>Booking Form</h2>
-    <form action="/submit_booking" method="post">
+    <h2 style="text-align: center; font-size: 24px;">Booking Form</h2>
+    <form action="/submit_booking" method="post" style="text-align: center; width: 80%; max-width: 600px; margin: 0 auto;">
         <!-- Personal Information -->
-        <label for="name">Full Name:</label><br>
-        <input type="text" id="name" name="name" required><br><br>
+        <label for="name" style="font-size: 18px;">Full Name:</label><br>
+        <input type="text" id="name" name="name" required style="font-size: 16px; width: 100%; padding: 8px;"><br><br>
 
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email" required><br><br>
+        <label for="email" style="font-size: 18px;">Email:</label><br>
+        <input type="email" id="email" name="email" required style="font-size: 16px; width: 100%; padding: 8px;"><br><br>
 
-        <label for="phone">Phone Number:</label><br>
-        <input type="tel" id="phone" name="phone" required><br><br>
+        <label for="password" style="font-size: 18px;">Password:</label><br>
+        <input type="password" id="password" name="password" required style="font-size: 16px; width: 100%; padding: 8px;"><br><br>
+
+        <label for="phone" style="font-size: 18px;">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone" required style="font-size: 16px; width: 100%; padding: 8px;"><br><br>
 
         <!-- Booking Details -->
-        <label for="booking-date">Booking Date:</label><br>
-        <input type="date" id="booking-date" name="booking_date" required><br><br>
+        <label for="booking-date" style="font-size: 18px;">Booking Date:</label><br>
+        <input type="date" id="booking-date" name="booking_date" required style="font-size: 16px; width: 100%; padding: 8px;"><br><br>
 
-        <label for="booking-time">Booking Time:</label><br>
-        <input type="time" id="booking-time" name="booking_time" required><br><br>
+        <label for="booking-time" style="font-size: 18px;">Booking Time:</label><br>
+        <input type="time" id="booking-time" name="booking_time" required style="font-size: 16px; width: 100%; padding: 8px;"><br><br>
 
-        <label for="number-of-guests">Number of Guests:</label><br>
-        <input type="number" id="number-of-guests" name="number_of_guests" min="1" required><br><br>
+        <label for="number-of-guests" style="font-size: 18px;">Number of Guests:</label><br>
+        <input type="number" id="number-of-guests" name="number_of_guests" min="1" required style="font-size: 16px; width: 100%; padding: 8px;"><br><br>
 
-        <label for="special-requests">Special Requests:</label><br>
-        <textarea id="special-requests" name="special_requests" rows="4" cols="50"></textarea><br><br>
+        <label for="special-requests" style="font-size: 18px;">Special Requests:</label><br>
+        <textarea id="special-requests" name="special_requests" rows="4" cols="50" style="font-size: 16px; width: 100%; padding: 8px;"></textarea><br><br>
+
+        <!-- File Upload -->
+        <label for="file-upload" style="font-size: 18px;">Upload ID Proof:</label><br>
+        <input type="file" id="file-upload" name="file_upload" required style="font-size: 16px;"><br><br>
 
         <!-- Submit Button -->
-        <input type="submit" value="Book Now">
+        <input type="submit" value="Book Now" style="font-size: 18px; padding: 10px 20px; background-color: #007BFF; color: white; border: none; cursor: pointer; border-radius: 4px;">
     </form>
 </body>
 </html>

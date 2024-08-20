@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Subject Enrollment Form</title>
 </head>
-<body>
+<body style="text-align: center; font-family: Arial, sans-serif;">
     <h2>Subject Enrollment Form</h2>
     <form action="/submit_enrollment" method="post">
         <label for="student-name">Student Name:</label><br>
@@ -20,33 +20,51 @@
         <label for="phone">Phone Number:</label><br>
         <input type="tel" id="phone" name="phone" required><br><br>
 
-        <label for="subjects">Select Subjects (up to 8):</label><br>
-        <input type="checkbox" id="mathematics" name="subjects" value="mathematics">
-        <label for="mathematics">Mathematics</label><br>
-        <input type="checkbox" id="science" name="subjects" value="science">
-        <label for="science">Science</label><br>
-        <input type="checkbox" id="english" name="subjects" value="english">
-        <label for="english">English</label><br>
-        <input type="checkbox" id="history" name="subjects" value="history">
-        <label for="history">History</label><br>
-        <input type="checkbox" id="geography" name="subjects" value="geography">
-        <label for="geography">Geography</label><br>
-        <input type="checkbox" id="physics" name="subjects" value="physics">
-        <label for="physics">Physics</label><br>
-        <input type="checkbox" id="chemistry" name="subjects" value="chemistry">
-        <label for="chemistry">Chemistry</label><br>
-        <input type="checkbox" id="biology" name="subjects" value="biology">
-        <label for="biology">Biology</label><br>
-        <input type="checkbox" id="computer-science" name="subjects" value="computer-science">
-        <label for="computer-science">Computer Science</label><br>
-        <input type="checkbox" id="physical-education" name="subjects" value="physical-education">
-        <label for="physical-education">Physical Education</label><br>
-        <input type="checkbox" id="art" name="subjects" value="art">
-        <label for="art">Art</label><br>
-        <input type="checkbox" id="music" name="subjects" value="music">
-        <label for="music">Music</label><br><br>
+        <label for="subjects">Select Subjects (up to 8):</label><br><br>
 
-        <input type="submit" value="Enroll">
+        <div style="display: inline-block; text-align: left;">
+            <div>
+                <input type="checkbox" id="mathematics" name="subjects" value="mathematics">
+                <label for="mathematics">Mathematics</label><br>
+
+                <input type="checkbox" id="science" name="subjects" value="science">
+                <label for="science">Science</label><br>
+
+                <input type="checkbox" id="english" name="subjects" value="english">
+                <label for="english">English</label><br>
+
+                <input type="checkbox" id="history" name="subjects" value="history">
+                <label for="history">History</label><br>
+
+                <input type="checkbox" id="geography" name="subjects" value="geography">
+                <label for="geography">Geography</label><br>
+            
+                <input type="checkbox" id="physics" name="subjects" value="physics">
+                <label for="physics">Physics</label><br>
+
+                <input type="checkbox" id="chemistry" name="subjects" value="chemistry">
+                <label for="chemistry">Chemistry</label><br>
+
+                <input type="checkbox" id="biology" name="subjects" value="biology">
+                <label for="biology">Biology</label><br>
+
+                <input type="checkbox" id="computer-science" name="subjects" value="computer-science">
+                <label for="computer-science">Computer Science</label><br>
+
+                <input type="checkbox" id="physical-education" name="subjects" value="physical-education">
+                <label for="physical-education">Physical Education</label><br>
+
+                <input type="checkbox" id="art" name="subjects" value="art">
+                <label for="art">Art</label><br>
+
+                <input type="checkbox" id="music" name="subjects" value="music">
+                <label for="music">Music</label><br>
+            
+        </div><br><br>
+
+        <div>
+            <button type="submit" style="width: 100%; padding: 10px; font-size: 16px;">Enroll</button>
+        </div>
     </form>
 </body>
 </html>
